@@ -1,0 +1,113 @@
+/*---------------------------*/
+/*Main*/
+/*---------------------------*/
+.main {
+  @include box-shadow();
+  margin: 1rem;
+  padding: 1rem;
+}
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.main__inner {
+  display: flex;
+  flex-direction: column;
+}
+/*-----------------------------*/
+/*Main about*/
+/*-----------------------------*/
+.main__about {
+  display: flex;
+  flex-direction: column;
+}
+.main__about-title {
+  text-align: center;
+}
+
+
+.main__about-subtitle {
+
+}
+
+
+.main__about-text {
+
+}
+
+
+.main__about-text--bold {
+  font-weight: bold;
+}
+
+/*---------------------------*/
+/*Main Works*/
+/*---------------------------*/
+.main__works {
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__works-last {
+
+}
+.main__works-title {
+
+}
+.main__works-subtitle {
+
+}
+.main__works-link {
+}
+.main__works-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.main__works-all {
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*----------------------------*/
+/*Main info*/
+/*----------------------------*/
+.main__info {
+  @include box-shadow();
+  padding: .5rem;
+  margin: 0 0 0 1rem;
+display:flex;
+  max-height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.main__info-location {
+}
+.main__info-link {
+}
+.main__info-text {
+
+}
+.main__info-education {
+
+}
+.main__info-skills {
+
+}
+.main__info-list {
+
+}
+.main__info-item {
+
+}
+.main__info-links {
+
+}
+.main__info-materials {
+
+}

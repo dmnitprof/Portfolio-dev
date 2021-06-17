@@ -1,0 +1,27 @@
+/*Developed by DMN | Nikulshin Dmitriy*/
+/*=========================================================*/
+/* Imports files: reset, variables, mixins, icons, fonts*/
+/*========================================================*/
+@import "reset";
+@import "variables";
+@import "./icons/all.css";
+@import "mixins";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+/*----------------------------------------------*/
+/*Page styles*/
+/*----------------------------------------------*/
+
+/*Imports files style components*/
+@import "page";
+@import "header";
+@import "main";
+@import "footer";
+
+/*=============================================*/
+/*Media Queries*/
+/*=============================================*/
+/*Imports files @media*/
+@import "media";
+/*============================================*/
+/*Developed by DMN | Nikulshin Dmitriy*/

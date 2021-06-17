@@ -1,0 +1,19 @@
+/*@Mixin*/
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin text-decor-none() {
+  text-decoration: none;
+}
+
+@mixin list-style-none() {
+  list-style: none;
+}
+
+@mixin box-shadow() {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

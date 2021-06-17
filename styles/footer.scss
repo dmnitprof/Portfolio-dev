@@ -1,0 +1,31 @@
+/*---------------------------*/
+/*Footer*/
+/*---------------------------*/
+
+.footer {
+  margin: auto 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include box-shadow();
+}
+.footer__text {
+
+}
+.footer__social {
+
+}
+.footer__social-list {
+  display: flex;
+}
+.footer__social-item {
+  display: flex;
+  margin: 0 1rem 0 0;
+}
+.footer__social-item:last-child {
+  margin: 0;
+}
+.footer__social-link {
+
+}
+/*-------------------------*/
