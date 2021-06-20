@@ -8,6 +8,7 @@
 .vibration:hover .fa-mobile-alt {
   -webkit-animation: 0.1s tremor ease-out infinite;
   animation: 0.1s tremor ease-out infinite;
+  color: $white;
 }
 
 @-webkit-keyframes tremor {
@@ -80,16 +81,6 @@
   }
 }
 
-/*show*/
-.show-menu {
-  top: 0;
-  left:0;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
- @include main-background();
-  right: 0;
-  transition:left 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
-}
+
 
 
