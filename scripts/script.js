@@ -1,16 +1,16 @@
-// document.addEventListener('DOMContentLoaded', Onload)
-//
-// function Onload() {
-//     const pageLoading = document.querySelector('.page .loading')
-//     setTimeout(() => {
-//         pageLoading.style.display = 'none'
-//     }, 500)
-// }
+document.addEventListener('DOMContentLoaded', Onload)
 
-const burger = document.querySelector('.header__nav-burger span')
-const menu = document.querySelector('.header__nav-menu')
+function Onload() {
+    const pageLoading = document.querySelector('.page .loading')
+    setTimeout(() => {
+        pageLoading.style.display = 'none'
+    }, 500)
+}
 
-const switchClass = ['active', 'show']
+const burger = document.querySelector('.burger__span')
+const menu = document.querySelector('.header-nav__menu')
+
+const switchClass = ['active', 'show-menu']
 
 burger.addEventListener('click', (e) => {
         animateElement(burger, 0)
@@ -20,11 +20,3 @@ burger.addEventListener('click', (e) => {
 function animateElement(element, index) {
    element.classList.toggle(switchClass[index])
 }
-// const mediaQueryMobile = window.matchMedia(' (min-width: 320px),(max-width: 768px)')
-// const mediaQueryPc = window.matchMedia('(min-width: 769px)')
-// if (mediaQueryMobile.matches) {
-//     menu.classList.add('header__nav-menu--mobile')
-// }
-// if(mediaQueryPc.matches){
-//     menu.classList.remove('header__nav-menu--mobile')
-// }

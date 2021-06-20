@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,49 +7,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Портфолио | Никульшин Дмитрий</title>
-    <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 </head>
 <body>
 
 <!--Page-->
 <div class="page">
 
-    <!--    Loading-->
-    <!--  <div class="loading">-->
-    <!--    <i class="fas fa-sync fa-spin fa-2x"></i>-->
-    <!--  </div>-->
+      <div class="loading">
+        <i class="fas fa-sync fa-spin fa-2x"></i>
+      </div>
 
     <!--Header-->
     <header class="header">
-        <div class="header__profile">
-            <div class="header__profile-img">
-            <a class="link header__link" href="/">
-                <img src="./images/profile.jpg"
+
+        <div class="personal">
+
+            <div class="personal__avatar"   title="Дмитрий, web-разработчик">
+            <a class="link" href="#">
+                <img class="personal__avatar-img" src="./images/avatar.jpg"
                      alt="Никульшин Дмитрий"
-                     title="Дмитрий, web-разработчик"></a>
+                   ></a>
+                <strong class="personal__avatar__title">Никульшин Дмитрий</strong>
             </div>
-            <div class="social header__social">
-                <ul class="list header__social-list">
-                    <li class="header__social-item">
-                        <a class="link header__social-link" href="https://vk.com/public199239684" target="_blank"><i
+            <div class="social personal__social">
+                <ul class="list">
+                    <li class="social__item">
+                        <a class="link" href="https://vk.com/public199239684" target="_blank"><i
                                 class="fab fa-vk fa-2x"
                                 title="Моя страница вконтакте"></i></a>
                     </li>
-                    <li class="header__social-item">
+                    <li class="social__item">
                         <a class="link header__social-link"
                            href="https://wa.me/+79258615959?text=сообщение%20с%20сайта%20DMN:"
                            target="_blank"><i
                                 class="fab fa-whatsapp fa-2x" title="написать в whatsapp"></i></a></li>
-                    <li class="header__social-item">
-                        <a class="link header__social-link" href="https://telegram.me/QualityRepairPC"
+                    <li class="social__item">
+                        <a class="link" href="https://telegram.me/QualityRepairPC"
                            target="_blank"><i
                                 class="fab fa-telegram-plane fa-2x" title="написать в telegram"></i></a></li>
-                    <li class="header__social-item">
-                        <a class="link header__social-link" href="https://github.com/dmnitprof" target="_blank"><i
+                    <li class="social__item">
+                        <a class="link" href="https://github.com/dmnitprof" target="_blank"><i
                                 class="fab fa-github fa-2x"
                                 title="мой github"></i></a></li>
-                    <li class="header__social-item">
-                        <a class="link header__social-link" href="mailto:dmn.itprof@gmail.com"><i
+                    <li class="social__item">
+                        <a class="link" href="mailto:dmn.itprof@gmail.com"><i
                                 class="fas fa-at fa-2x"
                                 title="моя почта gmail"></i></a>
                     </li>
@@ -57,23 +58,21 @@
             </div>
         </div>
 
-        <nav class="header__nav">
-            <div class="header__nav-burger">
-                <span></span>
+        <nav class="header-nav">
+
+            <div class="burger">
+                <span class="burger__span"></span>
             </div>
-            <div class="header__nav-menu">
-                <ul class="header__nav-list list">
-                    <li class="header__nav-item"><a class="link header__nav-link" href="/">Главная</a></li>
-                    <li class="header__nav-item"><a class="link header__nav-link" href="/">Обо Мне</a></li>
-                    <li class="header__nav-item"><a class="link header__nav-link" href="/">Портфолио</a></li>
-                    <li class="header__nav-item"><a class="link header__nav-link" href="/">Контакты</a></li>
-                    <li class="header__nav-item"><a class="link header__nav-link" href="tel:+79258615959">
+            <div class="header-nav__menu">
+                <ul class="list header-nav__list">
+                    <li class="header-nav__item"><a class="link" href="/">Главная</a></li>
+                    <li class="header__nav-item"><a class="link" href="/">Обо Мне</a></li>
+                    <li class="header__nav-item"><a class="link" href="/">Портфолио</a></li>
+                    <li class="header__nav-item"><a class="link" href="/">Контакты</a></li>
+                    <li class="header__nav-item vibration"><a class="link" href="tel:+79258615959">
                         <i class="fas fa-mobile-alt"></i>&nbsp;Позвонить</a>
                     </li>
                 </ul>
-            </div>
-            <div class="header___background">
-                <img src="./images/header-bg.jpg" alt="Веб разработка">
             </div>
         </nav>
 
@@ -164,7 +163,7 @@
     <!--        Footer-->
     <footer class="footer">
         <p class="footer__text text">Developed by DMN >_</p>
-        <div class="footer__social social">
+        <div class="footer__social">
             <ul class="footer__social-list list">
                 <li class="footer__social-item"><a class="footer__social-link link" href="https://vk.com/public199239684" target="_blank"><i
                         class="fab fa-vk"></i></a></li>
@@ -178,14 +177,13 @@
                         class="fab fa-github"></i></a></li>
                 <li class="footer__social-item"><a class="footer__social-link link" href="mailto:dmn.itprof@gmail.com"><i
                         class="fas fa-at"></i></a></li>
-                <li class="header__nav-item"><a class="link header__nav-link" href="tel:+79258615959">
-                    <i class="fas fa-mobile-alt"></i>&nbsp;Позвонить</a>
+                <li class="header__nav-item vibration"><a class="link header__nav-link" href="tel:+79258615959">
+                    <i class="fas fa-mobile-alt"></i></a>
                 </li>
             </ul>
         </div>
     </footer>
 </div>
 <script type="module" src="./app.js"></script>
->
 </body>
 </html>

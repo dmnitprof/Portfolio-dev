@@ -2,10 +2,12 @@
 /*=========================================================*/
 /* Imports files: reset, variables, mixins, icons, fonts*/
 /*========================================================*/
-@import "reset";
 @import "variables";
-@import "./icons/all.css";
 @import "mixins";
+@import "./icons/all.css";
+@import "reset";
+@import "animation";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 /*----------------------------------------------*/
@@ -18,10 +20,5 @@
 @import "main";
 @import "footer";
 
-/*=============================================*/
-/*Media Queries*/
-/*=============================================*/
-/*Imports files @media*/
-@import "media";
 /*============================================*/
 /*Developed by DMN | Nikulshin Dmitriy*/
