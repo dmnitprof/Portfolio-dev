@@ -1,6 +1,8 @@
 
 document.addEventListener('DOMContentLoaded', Onload)
 
+document.addEventListener('DOMContentLoaded', Onload)
+
 function Onload() {
     const pageLoading = document.querySelector('.page .loading')
     setTimeout(() => {
@@ -55,8 +57,8 @@ function touchend(e) {
 }
 
 burger.addEventListener('click', () => {
-        animateElement(burger, 0)
-        animateElement(menu, 1)
+    animateElement(burger, 0)
+    animateElement(menu, 1)
     animateElement(page, 2)
 })
 
@@ -99,4 +101,3 @@ function changeSlide(direction) {
     sidebar.style.transform = `translateX(${activeSlideIndex * width}px)`
 
 }
-
