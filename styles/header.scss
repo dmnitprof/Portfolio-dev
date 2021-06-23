@@ -8,7 +8,8 @@
   @include box-shadow();
   display: flex;
   justify-content: space-between;
-
+  height: 100vh;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5),  0 0 1px rgba(0,0,0,0.9);
 }
 
 /*----------------------------*/
@@ -18,15 +19,17 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  flex: 8;
-
+  flex: 1 0 50%;
   &__avatar {
-    max-width: 200px;
     display: flex;
+    min-width: 150px;
+    flex: 0 1 20%;
+    min-height: auto;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    margin-left: 1rem;
 
     &-img {
       display: flex;
@@ -34,21 +37,22 @@
       height: auto;
       @include box-shadow();
       padding: 0.5rem;
-      margin: .5rem .5rem 0 0;
     }
 
     &__title {
 
     }
   }
-
+  .personal__social{
+    margin: 0 1rem 0 0;
+  }
   .social {
     &__item {
       border-radius: 9%;
       text-align: center;
       padding: .4rem;
       margin: 0 0 .5rem -1rem;
-      @include box-shadow();
+      box-shadow: 8px -4px 10px 0px rgb(0 0 0 / 50%);;
     }
   }
 
@@ -57,55 +61,48 @@
 /*----------------------------*/
 /*Header Navigation*/
 /*----------------------------*/
+
 .header-nav {
   display: flex;
   justify-content: center;
-  flex: 2;
   flex-direction: column;
-
+  background-image: url(https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 45%;
+  width: 100%;
+  flex: 1 1 50%;
 
 
   &__menu {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    left: 100vw;
+    top: -200vw;
     background: rgba(0, 0, 0, 0.9);
-    transition: left .5s 0.2s;
-    //transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+    transition: right .5s 0.2s;
+    touch-action: none;
+    z-index: 100;
+    }
+
   }
   /*show*/
   .show-menu {
     top: 0;
     left:0;
     bottom: 0;
-    transition: all .5s 0.2s;
-    //transition: right 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  @media (min-width: 320px) and (max-width: 576px) {
-    &__list {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -70%);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      row-gap: 1rem;
-      font-size: 1.5rem;
-    }
+    right: 0;
+    transition: top .5s 0.2s;
   }
   .phone {
     color: dimgray;
   }
-
   /*====================================*/
   /*Burger*/
 
   .burger {
     position: absolute;
-    right: 1.5rem;
+    right: 1rem;
     top: 2rem;
     width: 2.5rem;
     cursor: pointer;
@@ -160,4 +157,12 @@
       }
     }
   }
+
+#about,
+#works, {
+  scroll-behavior: smooth;
 }
+
+
+
+

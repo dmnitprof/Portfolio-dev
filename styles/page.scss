@@ -7,6 +7,12 @@
 .html, body {
  @include main-background();
   color: $white;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
 }
 .hidden {
   overflow: hidden;
@@ -15,8 +21,11 @@
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 1200px;
+  width: 100vw;
   height: 100vh;
+
+
 }
 
 /*Loading*/
@@ -44,8 +53,15 @@
 .title {
   text-align: center;
 }
-.subtitle {
-  text-align: center;
+
+.hr {
+ max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
 }
+
+
+
+
 
 

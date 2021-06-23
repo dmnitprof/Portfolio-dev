@@ -1,33 +1,29 @@
 /*---------------------------*/
 /*Footer*/
 /*---------------------------*/
+@import "variables";
+@import "mixins";
 
 .footer {
+  width: 100%;
   margin: auto 0 0 0;
   display: flex;
-  justify-content: center;
+ justify-content: center;
   align-items: center;
-  @include box-shadow();
   background: rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 10px rgba(0,0,0,0.5),  0 0 20px rgba(0,0,0,0.9);
 }
-.footer__text {
 
-}
-.footer__social {
-
-}
 .footer__social-list {
   display: flex;
+  margin-right: 1rem;
+
 }
 .footer__social-item {
   display: flex;
   margin: 0 1rem 0 0;
 }
-.footer__social-item:last-child {
-  margin: 0;
-}
-.footer__social-link {
-
+.footer__text {
+  margin-left: 1rem;
 }
 /*-------------------------*/
