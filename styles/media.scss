@@ -16,17 +16,28 @@
     white-space: nowrap;
     font-size: 1.5rem;
   }
-  .main-slide > div {
-    background-size: contain!important;
-    background-position: center 30%!important;
+  .slide-container {
+    height: 50vh!important;
   }
+  .main-slide {
+    height: 50vh!important;
+  }
+  .main-slide > div {
+    img {
+      transform: translateY(-30%);
+      max-width: 100%;
+      height:auto;
+    }
+  }
+.sidebar {
+  height: 20vh!important;
+}
   .sidebar > div {
     flex-direction: column;
 
   }
 
   }
-
 @media (min-width: 767.98px) {
   #menu {
     display: flex;
