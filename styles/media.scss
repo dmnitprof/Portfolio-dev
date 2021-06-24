@@ -36,8 +36,14 @@
     flex-direction: column;
 
   }
+  .slide-container .controls button {
+    top: 50%!important;
 
   }
+
+
+}
+
 @media (min-width: 767.98px) {
   #menu {
     display: flex;
