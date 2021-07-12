@@ -25,9 +25,10 @@
 
             <div class="personal__avatar"   title="Дмитрий, web-разработчик">
             <a class="link" href="#">
-                <img class="personal__avatar-img" src="./images/avatar.jpg"
+                <img class="personal__avatar-img" src="./images/avatar-2.jpg"
                      alt="Никульшин Дмитрий"
-                   ></a>
+                   >
+            </a>
                 <strong class="personal__avatar__title">Никульшин Дмитрий</strong>
             </div>
             <div class="social personal__social">
@@ -68,7 +69,7 @@
                     <li class="header-nav__item"><a class="link" href="/">Главная</a></li>
                     <li class="header-nav__item"><a class="link" href="#about">Обо&nbsp;Мне</a></li>
                     <li class="header-nav__item"><a class="link" href="#works">Портфолио</a></li>
-                    <li class="header-nav__item"><a class="link" href="/">Контакты</a></li>
+                    <li class="header-nav__item"><a class="link" href="#contacts">Контакты</a></li>
                     <li class="header-nav__item vibration"><a class="link" href="tel:+79258615959">
                         <i class="fas fa-mobile-alt phone"></i>&nbsp;Позвонить</a>
                     </li>
@@ -87,8 +88,8 @@
                     <h3 class="main__about-subtitle title">Обо Мне</h3>
                     <p class="main__about-text">Здравствуйте, меня зовут<span
                             class="main__about-text--bold">&nbsp;Дмитрий.</span></p>
-                    <p class="main__about-text text">Знанимаюсь разработкой пользовательских интерфейсов,&nbsp;веб сайтов и
-                        приложений.</p>
+                    <p class="main__about-text text">Разрабатываю пользовательские интерфейсы, веб сайты и приложения.</p>
+                    <p></p>
                 </section>
 
                 <!-- Work-->
@@ -111,25 +112,34 @@
                             <div>
                                 <img src="./images/aim-game.png" alt="aim-game">
                             </div>
+                            <div>
+                                <img src="./images/adventure.png" alt="layout-adventure">
+                            </div>
                         </div>
                         <div class="sidebar">
+                            <div class="sidebar__item" style="background: linear-gradient(229.99deg,
+#775 -26%, #775 145%);">
+                                <strong class="strong">landing page:&nbsp;&nbsp;</strong>
+                                <p>landing Adventure</p>
+                                <a href="https://makeup-layout-adventure.web.app/" target="_blank">посмотеть</a>
+                            </div>
                             <div class="sidebar__item" style="background: linear-gradient(229.99deg, #43505d -26%, #2e3742 145%);">
-                                <strong>Мини игра:&nbsp;&nbsp;</strong>
+                                <strong class="strong">Мини игра:&nbsp;&nbsp;</strong>
                               <p>Aim game</p>
                                 <a href="https://aim-game-js.web.app/" target="_blank">посмотеть</a>
                             </div>
                             <div  class="sidebar__item" style="background: linear-gradient(215.32deg, #101010 -1%, #1d1d1d 124%);">
-                                <strong  class="strong-white">Анамация но доске:&nbsp;</strong>
+                                <strong  class="strong-white">Анимация но доске:&nbsp;</strong>
                                 <p>Случайный порядок цветов</p>
                                 <a href="https://dmnitprof.github.io/boardJS/" target="_blank">посмотеть</a>
                             </div>
                             <div  class="sidebar__item"  style="background: linear-gradient(221.87deg, #95a403 1%, #95a403 128%);">
-                                <strong>Адаптивный слайдер:&nbsp;</strong>
+                                <strong class="strong">Адаптивный слайдер:&nbsp;</strong>
                                 <p>Слайдер с описанием</p>
                                 <a href="https://dmnitprof.github.io/Slider2JS/" target="_blank">посмотеть</a>
                             </div>
-                            <div  class="sidebar__item" style="background:linear-gradient(229.99deg, #ca8902 -26%, #9e6001 145%);}">
-                                <strong>Слайдер:&nbsp;</strong>
+                            <div  class="sidebar__item" style="background:linear-gradient(229.99deg, #ca8902 -26%, #9e6001 145%);">
+                                <strong class="strong">Слайдер:&nbsp;</strong>
                                     <p>Простой слайдер для галереи&nbsp;</p>
                                 <a href="https://dmnitprof.github.io/Slider/" target="_blank">посмотеть</a>
                             </div>
@@ -144,10 +154,34 @@
                         </div>
                     </div>
                 </section>
+        <section class="main__contacts" id="contacts">
+            <h2 class="main__contacts-title title">Мои контакты</h2>
+            <hr class="hr"/>
+            <div class="main__contacts-form">
+                <h3 class="main__contacts-subtitle">Написать разработчику</h3>
+                <div class="main__contacts-message"></div>
+            <label>
+            <input type="text" class="main__contacts-input" id="contacts-input-name" placeholder="Введите ваше имя">
+            </label>
+                <label>
+                    <input type="text" class="main__contacts-input" id="contacts-input-data" placeholder="Введите телефон или email">
+                </label>
+            <label>
+                <textarea class="main__contacts-textarea" placeholder="Введите текст сообщения..."></textarea>
+            </label>
+            <button class="main__contacts-button">отправить</button>
+
+                <p class="main__contacts-text"><a class="link main__contacts-link vibration" href="tel:+79258615959">
+                    <i class="fas fa-mobile-alt phone">&nbsp;</i>8-925-861-59-59</a></p>
+                <p class="main__contacts-text"><a class=" main__contacts-link link" href="/"><i
+                        class="fas fa-at">&nbsp;</i>dmn.itprof@gmail.com</a></p>
+            </div>
+
+        </section>
     </main>
     <!--        Footer-->
     <footer class="footer">
-        <p class="footer__text text">Developed by DMN >_</p>
+        <p class="footer__text text">Developed by DMN&nbsp;>_</p>
         <div class="footer__social">
             <ul class="footer__social-list list">
                 <li class="footer__social-item"><a class="footer__social-link link" href="https://vk.com/public199239684" target="_blank"><i
@@ -163,7 +197,7 @@
                 <li class="footer__social-item"><a class="footer__social-link link" href="mailto:dmn.itprof@gmail.com"><i
                         class="fas fa-at"></i></a></li>
                 <li class="header__nav-item vibration"><a class="link header__nav-link" href="tel:+79258615959">
-                    <i class="fas fa-mobile-alt"></i></a>
+                    <i class="fas fa-mobile-alt phone"></i></a>
                 </li>
             </ul>
         </div>

@@ -7,13 +7,6 @@
 .main {
 }
 
-.container {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-
-}
 
 /*-----------------------------*/
 /*Main about*/
@@ -29,7 +22,7 @@
 }
 
 .main__about-subtitle {
-  margin: 0 0 .5rem 0;
+  margin: 1rem 0 .5rem 0;
 }
 
 .main__about-text--bold {
@@ -54,34 +47,35 @@
   display: flex;
   position: relative;
   overflow: hidden;
-  max-width: 100%;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
+
 
 .main-slide {
   display: flex;
   width: 100%;
-  height: 90vh;
   transition: transform 0.5s ease-in-out;
   padding: 0;
+  margin-bottom: 1rem;
 }
 
 .main-slide > div {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex: 1 0 100%;
-  img{
-    max-width: 100vw;
+  margin-top: 2rem;
+
+  img {
+    height: auto;
+    max-width: 100%;
   }
 }
 
 .sidebar {
-  display: flex;
-  max-width: 100%;
-  width: 100vw;
-  height: 30vh;
+  width: 100%;
+  display: flex;;
   position: absolute;
   bottom: 0;
   transition: transform 0.5s ease-in-out;
@@ -92,37 +86,37 @@
     align-items: center;
     text-align: center;
     flex: 1 0 100%;
-    height: 100%;
     width: 100%;
     color: #fff;
+    padding: 2rem 0 1rem 0;
+    margin-bottom: -.5rem;
   }
-  strong{
-    font-size: 1.5rem;
+
+  .strong {
+    font-size: 1.2rem;
     color: #242222;
-    margin-top: 1rem;
   }
+
   .strong-white {
+    font-size: 1.2rem;
     color: #a7a5a5;
   }
+
   p {
     font-size: 1rem;
-   margin-top: .2em;
+    margin-top: .2em;
   }
+
   a {
     color: #224dd7;
     text-decoration: none;
-    margin: .2rem 0 0 .5rem ;
+    font-size: 1.1rem;
+    margin: .2rem 0 0 .5rem;
+
     &:hover {
       color: $red;
     }
   }
-}
-
-.sidebar h3 {
-  font-size: 2rem;
-  text-align: center;
-  margin: 1rem 0 0 0;
-
 }
 
 .button {
@@ -131,13 +125,14 @@
   color: #aaa;
   cursor: pointer;
   font-size: .9rem;
-  padding: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5),  0 0 15px rgba(0,0,0,0.9);
+  padding: .5rem 1rem .5rem 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 0, 0, 0.9);
 }
 
 button:hover {
   color: $white;
 }
+
 button:active {
   color: $red;
 }
@@ -150,23 +145,83 @@ button:focus {
 .slide-container .controls button {
   position: absolute;
   left: 50%;
-  top: 60%;
+  top: 85%;
   z-index: 100;
 }
 
 .slide-container .controls .left-button {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  margin-left: -3rem;
+  margin-left: -6rem;
 }
 
 .slide-container .controls .right-button {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  margin-left: 1rem;
+  margin-left:3rem;
 }
 
 
 /*=============================================*/
 /*Contacts*/
 /*=============================================*/
+.main__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 1rem;
+
+}
+
+.main__contacts-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%), 0 0 20px rgb(0 0 0 / 90%);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.main__contacts-title {
+
+}
+
+.main__contacts-input {
+  display: flex;
+  align-self: flex-start;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.main__contacts-textarea {
+  width: 100%;
+  margin: 1rem 0 0 0;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.main__contacts-button {
+ display: flex;
+  align-self: flex-end;
+  color: white;
+  margin-top: .5rem;
+  padding: .5rem;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%), 0 0 20px rgb(0 0 0 / 90%);
+}
+.main__contacts-link {
+  padding-left: 1rem;
+}
+.main__contacts-text {
+  text-align: left;
+  margin: .5rem 0;
+}
+
+
+

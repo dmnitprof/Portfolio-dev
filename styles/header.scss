@@ -8,7 +8,6 @@
   @include box-shadow();
   display: flex;
   justify-content: space-between;
-  height: 100vh;
   box-shadow: 0 0 10px rgba(0,0,0,0.5),  0 0 1px rgba(0,0,0,0.9);
 }
 
@@ -19,10 +18,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex: 1 0 50%;
   &__avatar {
     display: flex;
-    min-width: 150px;
+    min-width: 200px;
     flex: 0 1 20%;
     min-height: auto;
     flex-direction: column;
@@ -33,14 +33,15 @@
 
     &-img {
       display: flex;
+     justify-self: center;
       width: 100%;
       height: auto;
       @include box-shadow();
-      padding: 0.5rem;
+      padding: 0.35rem;
     }
 
     &__title {
-
+      margin-top: 1rem;
     }
   }
   .personal__social{
@@ -94,9 +95,15 @@
     right: 0;
     transition: top .5s 0.2s;
   }
+
   .phone {
     color: dimgray;
   }
+.phone:hover::before {
+  color: rgba(212,47,47,.69);
+
+}
+
   /*====================================*/
   /*Burger*/
 

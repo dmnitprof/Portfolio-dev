@@ -1,6 +1,3 @@
-
-document.addEventListener('DOMContentLoaded', Onload)
-
 document.addEventListener('DOMContentLoaded', Onload)
 
 function Onload() {
@@ -9,6 +6,7 @@ function Onload() {
         pageLoading.style.display = 'none'
     }, 500)
 }
+
 const page = document.querySelector('.page')
 const burger = document.querySelector('.burger__span')
 const menu = document.querySelector('.header-nav__menu')
@@ -20,6 +18,13 @@ const slideContainer = document.querySelector('.slide-container')
 const mainSlide = document.querySelector('.main-slide')
 const slidesCount = mainSlide.querySelectorAll('div').length
 const anchors = document.querySelectorAll('a[href*="#"]')
+const mainContactsInputName = document.querySelector('#contacts-input-name')
+const mainContactsInputData = document.querySelector('#contacts-input-data')
+const mainContactsTextarea = document.querySelector('.main__contacts-textarea')
+const mainContactsButton = document.querySelector('.main__contacts-button')
+const mainContactsMessage = document.querySelector('.main__contacts-message')
+const botKey = import.meta.env.VITE_APP_BOT_KEY
+const URL = `https://api.telegram.org/bot1213080858:${botKey}/sendMessage?chat_id=-1001169555829&&text=`
 
 const values = ['active', 'show-menu', 'hidden']
 let activeSlideIndex = 0
@@ -27,10 +32,14 @@ let activeSlideIndex = 0
 for (let anchor of anchors) {
     anchor.addEventListener('click', e => {
         e.preventDefault()
-        const  blockId = anchor.getAttribute('href')
+        burger.classList.remove('active')
+        menu.classList.remove('show-menu')
+        page.classList.remove('hidden')
+        const blockId = anchor.getAttribute('href')
+
         document.querySelector('' + blockId).scrollIntoView({
             behavior: "smooth",
-            block: "start"
+            block: "nearest"
         })
 
     })
@@ -63,7 +72,7 @@ burger.addEventListener('click', () => {
 })
 
 
-sidebar.style.right = `${(slidesCount - 1) * 100}vw`
+sidebar.style.right = `${(slidesCount - 1) * 100}%`
 
 
 rightBtn.addEventListener('click', () => {
@@ -101,3 +110,48 @@ function changeSlide(direction) {
     sidebar.style.transform = `translateX(${activeSlideIndex * width}px)`
 
 }
+
+
+mainContactsButton.addEventListener('click', () => {
+    fetchTelegram()
+})
+
+function fetchTelegram() {
+    if (mainContactsInputName.value && mainContactsInputData.value && mainContactsTextarea.value) {
+        fetch(`${URL}
+*имя пользователя:* ${mainContactsInputName.value} %0A\
+*данные пользователя:* ${mainContactsInputData.value} %0A\
+*Сообщение:* ${mainContactsTextarea.value}
+&parse_mode=markdown`)
+            .then((response) => {
+                if (response.status === 200) {
+                    mainContactsMessage.innerHTML = 'Сообщение отправлено успешно'
+                    mainContactsMessage.style.color = 'green'
+                    mainContactsMessage.style.transition = 'all 1s'
+                    setTimeout(() => {
+                        mainContactsMessage.innerHTML = ''
+                    }, 5000)
+                    mainContactsInputName.value = mainContactsInputData.value = mainContactsTextarea.value = ''
+                    console.log(response.status)
+                } else {
+                    mainContactsMessage.innerHTML = 'Что-то пошло не так'
+                    mainContactsMessage.style.color = 'red'
+                    mainContactsMessage.style.transition = 'all 1s'
+                    setTimeout(() => {
+                        mainContactsMessage.innerHTML = ''
+                    }, 5000)
+                    console.log(response.status)
+                }
+            })
+    } else {
+        mainContactsMessage.innerHTML = 'Поля не должны быть пустыми'
+        mainContactsMessage.style.color = 'red'
+        mainContactsMessage.style.transition = 'all 1s'
+        setTimeout(() => {
+            mainContactsMessage.innerHTML = ''
+        }, 5000)
+    }
+
+}
+
+

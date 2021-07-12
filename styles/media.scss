@@ -1,4 +1,4 @@
-@media (max-width: 575.98px) {
+@media (max-width: 667.98px) {
   .header-nav {
     background-image: none!important;
   }
@@ -16,35 +16,32 @@
     white-space: nowrap;
     font-size: 1.5rem;
   }
-  .slide-container {
-    height: 50vh!important;
+
+
+.right-button,  .left-button {
+    top: 65%!important;
+    z-index: 99!important;
   }
-  .main-slide {
-    height: 50vh!important;
-  }
-  .main-slide > div {
-    img {
-      transform: translateY(-30%);
-      max-width: 100%;
-      height:auto;
-    }
-  }
-.sidebar {
-  height: 20vh!important;
-}
   .sidebar > div {
+    display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
 
   }
-  .slide-container .controls button {
-    top: 50%!important;
+  .slide-container .controls .left-button {
 
+    margin-left: -10rem!important;
   }
 
+  .slide-container .controls .right-button {
+    margin-left: 7rem!important;
+  }
 
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: 668px) {
   #menu {
     display: flex;
     top: 0;
@@ -52,16 +49,32 @@
     flex: 1 0 50%;
     background: transparent;
   }
-  .burger{
-    display: none;
-  }
+
   .header-nav__list {
    margin-top: 2rem;
   }
+
   .header-nav__item{
     margin: 0 1rem 0 0;
     font-size: 1.5rem;
   }
+  .burger{
+    display: none;
+  }
+
+  .main__contacts-input {
+    width: 50%!important;
+
+  }
+  .right-button,  .left-button {
+    z-index: 99!important;
+  }
+  .button {
+    top:  80%!important;
+    font-size: 1rem!important;
+  }
+
+
 
 }
 
