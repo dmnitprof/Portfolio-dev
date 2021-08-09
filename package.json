@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "vite  --host --open",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview --host --open"
   },
   "devDependencies": {
     "sass": "^1.35.1",

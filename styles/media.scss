@@ -1,3 +1,11 @@
+
+@media (max-width: 576px){
+  .works {
+    height: 50vh;
+  }
+}
+
+
 @media (max-width: 667.98px) {
   .header-nav {
     background-image: none!important;
@@ -16,6 +24,7 @@
     white-space: nowrap;
     font-size: 1.5rem;
   }
+
 
 
 .right-button,  .left-button {
